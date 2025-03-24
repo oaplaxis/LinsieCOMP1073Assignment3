@@ -1,6 +1,11 @@
-h1, p, label, input, div {
+h1, p, label, input, div{
     font-family: "Raleway", sans-serif;
     font-weight: 500;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
 }
 
 p {
@@ -15,180 +20,33 @@ body {
 }
 
 h1 {
-    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: antiquewhite;
+    margin: 0 auto;
+    background: url("../images/pizza.png");
+    background-size: cover;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
 }
-
-label[for="top1"],
-input[type="checkbox"]#top2:checked + label[for="top1"] {
-    background: url('images\toppings\pepperoni.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top1"]:hover,
-input[type="checkbox"]#top2:checked + label[for="top1"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top2-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 2 */
-label[for="top2"],
-input[type="checkbox"]#top2:checked + label[for="top2"] {
-    background: url('top2-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top2"]:hover,
-input[type="checkbox"]#top2:checked + label[for="top2"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top2-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 3 */
-label[for="top3"],
-input[type="checkbox"]#top3:checked + label[for="top3"] {
-    background: url('top3-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top3"]:hover,
-input[type="checkbox"]#top3:checked + label[for="top3"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top3-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 4 */
-label[for="top4"],
-input[type="checkbox"]#top4:checked + label[for="top4"] {
-    background: url('top4-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top4"]:hover,
-input[type="checkbox"]#top4:checked + label[for="top4"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top4-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 5 */
-label[for="top5"],
-input[type="checkbox"]#top5:checked + label[for="top5"] {
-    background: url('top5-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top5"]:hover,
-input[type="checkbox"]#top5:checked + label[for="top5"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top5-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 6 */
-label[for="top6"],
-input[type="checkbox"]#top6:checked + label[for="top6"] {
-    background: url('top6-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top6"]:hover,
-input[type="checkbox"]#top6:checked + label[for="top6"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top6-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 7 */
-label[for="top7"],
-input[type="checkbox"]#top7:checked + label[for="top7"] {
-    background: url('top7-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top7"]:hover,
-input[type="checkbox"]#top7:checked + label[for="top7"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top7-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 8 */
-label[for="top8"],
-input[type="checkbox"]#top8:checked + label[for="top8"] {
-    background: url('top8-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top8"]:hover,
-input[type="checkbox"]#top8:checked + label[for="top8"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top8-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 9 */
-label[for="top9"],
-input[type="checkbox"]#top9:checked + label[for="top9"] {
-    background: url('top9-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top9"]:hover,
-input[type="checkbox"]#top9:checked + label[for="top9"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top9-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-/* Topping 10 */
-label[for="top10"],
-input[type="checkbox"]#top10:checked + label[for="top10"] {
-    background: url('top10-image.jpg') no-repeat center/cover;
-    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition-delay: 0s, 0.2s;
-}
-
-label[for="top10"]:hover,
-input[type="checkbox"]#top10:checked + label[for="top10"] {
-    color: aliceblue;
-    background: linear-gradient(80deg, #000000 15%, transparent 15%), url('top10-image.jpg') no-repeat center/cover;
-    background-size: 200% 100%;
-    background-position: left;
-}
-
-
 
 p label {
+    margin-left: 15px;
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 15px;
     padding-bottom: 15px;
     border-radius: 50px;
-    width: auto;
+    width: 80vw;
 }
 
 .topping p{
+    margin-left: 0px;
     margin-right: auto;
 }
 
@@ -210,7 +68,7 @@ p label {
 }
 
 .topping span:last-child {
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .toppings span label {
@@ -244,6 +102,183 @@ span {
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+}
+
+label[for="top1"],
+input[type="checkbox"]#top1:checked + label[for="top1"] {
+    background: linear-gradient(80deg, #b82828 150%, #b82828 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top1"]:hover,
+input[type="checkbox"]#top1:checked + label[for="top1"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #b82828 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top2"],
+input[type="checkbox"]#top2:checked + label[for="top2"] {
+    background: linear-gradient(80deg, #e3406b 150%, #e3406b 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top2"]:hover,
+input[type="checkbox"]#top2:checked + label[for="top2"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #e3406b 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top3"],
+input[type="checkbox"]#top3:checked + label[for="top3"] {
+    background: linear-gradient(80deg, #f15252 150%, #f15252 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top3"]:hover,
+input[type="checkbox"]#top3:checked + label[for="top3"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #f15252 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top4"],
+input[type="checkbox"]#top4:checked + label[for="top4"] {
+    background: linear-gradient(80deg, #ef8b60 150%, #ef8b60  15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top4"]:hover,
+input[type="checkbox"]#top4:checked + label[for="top4"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #ef8b60  9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top5"],
+input[type="checkbox"]#top5:checked + label[for="top5"] {
+    background: linear-gradient(80deg, #edb375 150%, #edb375 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top5"]:hover,
+input[type="checkbox"]#top5:checked + label[for="top5"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #edb375 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top6"],
+input[type="checkbox"]#top6:checked + label[for="top6"] {
+    background: linear-gradient(80deg, #278507 150%, #278507 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top6"]:hover,
+input[type="checkbox"]#top6:checked + label[for="top6"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #278507 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top7"],
+input[type="checkbox"]#top7:checked + label[for="top7"] {
+    background: linear-gradient(80deg, #94055d 150%, #94055d 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top7"]:hover,
+input[type="checkbox"]#top7:checked + label[for="top7"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #94055d 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top8"],
+input[type="checkbox"]#top8:checked + label[for="top8"] {
+    background: linear-gradient(80deg, #f92323 150%, #f92323 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top8"]:hover,
+input[type="checkbox"]#top8:checked + label[for="top8"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #f92323 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top9"],
+input[type="checkbox"]#top9:checked + label[for="top9"] {
+    background: linear-gradient(80deg, #f0bf42 150%, #f0bf42 15%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top9"]:hover,
+input[type="checkbox"]#top9:checked + label[for="top9"] {
+    color: aliceblue;
+    background: linear-gradient(80deg, #000000 9%, #f0bf42 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+label[for="top10"],
+input[type="checkbox"]#top10:checked + label[for="top10"] {
+    background: linear-gradient(80deg, #000000 150%, #000000 15%);
+    color: white;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-delay: 0s, 0.2s;
+}
+
+label[for="top10"]:hover,
+input[type="checkbox"]#top10:checked + label[for="top10"] {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(80deg, #ffffff 9%, #000000 9%);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+.submit{
+    display: flex;
+    margin: 40px;
+    justify-content: center;
 }
 
 .doughoptions, .sauceoptions, .cheeseoptions {
@@ -280,8 +315,6 @@ span {
     background-position: left;
 }
 
-
-
 .doughoptions label, .sauceoptions label, .cheeseoptions label{
     border-radius: 50px;
     background-color: rgb(255, 217, 103);
@@ -300,12 +333,19 @@ input {
     accent-color: #000000;
 }
 
+#pizza-output{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
 div {
     padding-top: 10px;    
 }
 
 .size label{
     display: flex;
+    cursor: pointer;
 }
 
 p{
