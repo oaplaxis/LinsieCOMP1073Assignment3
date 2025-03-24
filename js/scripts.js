@@ -18,10 +18,11 @@ class Pizza {
         let cheeseList = this.cheese.map(cheese => `${cheese} cheese`);
 
         // Toppings handling
-        let toppingList = this.toppings.map(({ topping, position }) =>
-            position === 'whole' ? topping : `${topping} on the ${position} half`
-        );
-
+        let toppingList = this.toppings.map(({ topping, position }) => {
+            position = position ?? 'whole'; 
+            return position === 'whole' ? topping : `${topping} on the ${position} half`;
+        });
+        
         // Combine cheese and toppings into a single list
         const combinedList = [...cheeseList, ...toppingList];
 
@@ -32,7 +33,7 @@ class Pizza {
             } else if (combinedList.length === 2) {
                 description += `, ${combinedList.join(' and ')}`;
             } else {
-                description += `, and${combinedList.slice(0, -1).join(', ')}, and ${combinedList[combinedList.length - 1]}`;
+                description += `, ${combinedList.slice(0, -1).join(', ')}, and ${combinedList[combinedList.length - 1]}`;
             }
         }
 
